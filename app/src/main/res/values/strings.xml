@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Lost_it</string>
+    <string name="txt_login">Login</string>
+    <string name="Forget_password">Forgotten password?</string>
+    <string name="txt_Login">Login</string>
+    <string name="Forget_password1">Forgotten password?</string>
+
+</resources>

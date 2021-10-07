@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+
+<LinearLayout
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#eeeeee">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#404040"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#404040"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="69dp"
+                android:layout_height="61dp"
+                android:layout_gravity="left"
+                android:src="@drawable/profile"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#404040"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/post_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Bob"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/post_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="posted on 8/13/2021, West Nandipara, Dhaka"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/post_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="I lost my i-phone yesterday at bus stand area in Mirpur. I think it fell from my pocket while I was waiting for the bus.
+                          Lost mobile detail : iPhone-11 A1778
+                          Color: Pacific Blue.
+                          If someone in this area finds it please inform me.
+                          My Number: 0176543434
+                          My Email      : Bob123@gmail.com"
+            android:textSize="12dp"
+            android:textColor="#ffffff"/>
+
+        <ImageView
+            android:layout_width="498dp"
+            android:layout_height="367dp"
+            android:src="@drawable/post1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/upvote"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/comment"/>
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:padding="5dp"
+                    android:src="@drawable/reply"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:padding="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="57dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/mukto"/>
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="7dp"
+                android:text="Add a comment..."
+                android:background="@drawable/rounded_corner"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="   Post   "
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="57dp"-->
+<!--                android:layout_height="55dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:gravity="center"-->
+<!--                android:src="@drawable/mayaz"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#ffffff"-->
+<!--                android:padding="10dp"-->
+<!--                android:orientation="vertical">-->
+
+
+
+<!--                <TextView-->
+<!--                    android:id="@+id/post_name1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:clickable="true"-->
+<!--                    android:text="Harry"-->
+<!--                    android:textSize="16dp"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/post_date1"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:clickable="true"-->
+<!--                    android:text="I live in that area, I will go and check and ask the locals."-->
+<!--                    android:textSize="12dp"-->
+<!--                    android:textColor="#000000"/>-->
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+
+        <ListView
+            android:id="@+id/lv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+

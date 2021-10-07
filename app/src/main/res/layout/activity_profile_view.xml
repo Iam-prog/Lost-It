@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_profile_image_view"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/img_rou" />
+
+        <TextView
+            android:id="@+id/tv_profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Md Muktadir Mukto"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_profile_details"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_corner_f"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Profile Details"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_profile_activity"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/rounded_corner_f"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Activity"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/job" />
+
+            <TextView
+                android:id="@+id/tv_profile_job_or_studies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:hint="Education/Job"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/tv_profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:hint="Email"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/tv_profile_current_town_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:hint="Current town/City"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eeeeee"
+            android:padding="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Imv_profile_user_img"
+                android:layout_width="57dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:id="@+id/tv_profile_post_bar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corner"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Lost something? Post Here!"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/profile_progress_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_profile_all_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+</LinearLayout>

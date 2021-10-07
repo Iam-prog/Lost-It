@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="#eeeeee">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/profile_details_img_upload"
+            android:layout_width="127dp"
+            android:layout_height="127dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/profile_details_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:text="Profile Details"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/profile_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:hint="Name"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/profile_details_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Surname"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/dob" />
+
+            <TextView
+                android:id="@+id/profile_details_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:hint="Date of birth"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/job" />
+
+            <TextView
+                android:id="@+id/profile_details_job_edu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:hint="Job/Education"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/profile_details_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Email"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/profile_details_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/profile_details_current_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:hint="Current Location"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/profile_details_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:hint="Current Location"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:id="@+id/profile_details_fb_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Facebook Link"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/instagram" />
+
+            <TextView
+                android:id="@+id/profile_details_isntagram_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Instagram Link"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/twitter" />
+
+            <TextView
+                android:id="@+id/profile_details_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:hint="Twitter Link"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:src="@drawable/whatsapp" />
+
+            <TextView
+                android:id="@+id/pprofile_details_whatsapp_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:inputType="number"
+                android:hint="What's app number"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_edit_profile_details"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/rounded_corner_f"
+                android:clickable="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Edit Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
